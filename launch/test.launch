@@ -1,0 +1,12 @@
+<launch>
+    <!--环境路径-->
+
+    <!--初始伟式螺旋-->
+    <node pkg="pcl_test" type="pcl_test_node" name="pcl_test_node"
+          output="screen"   args="">
+        <remap from="/top/rslidar_points" to="/rslidar_points"/>
+        <!--读取map 到 gps_odom的tf-->
+    </node>
+    <!--定位主程序-->
+
+</launch>
